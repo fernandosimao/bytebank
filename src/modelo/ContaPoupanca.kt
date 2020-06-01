@@ -1,4 +1,8 @@
-class ContaCorrente(
+package modelo
+
+import modelo.Conta
+
+class ContaPoupanca(
     titular: String,
     numeroConta: Int
 ) : Conta(
@@ -6,9 +10,8 @@ class ContaCorrente(
     numeroConta = numeroConta
 ) {
     override fun saca(valor: Double) {
-        val valorComTaxa = valor + 0.2
-       if(this.saldo >= valorComTaxa){
-           this.saldo -= valorComTaxa
-       }
+        if(this.saldo >= valor){
+            this.saldo -= valor
+        }
     }
 }

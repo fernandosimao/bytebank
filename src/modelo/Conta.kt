@@ -1,4 +1,6 @@
-//construtor primário dentro de Conta (). O construtor secundário pode ser incluido através de constructor()
+package modelo
+
+//construtor primário dentro de modelo.Conta (). O construtor secundário pode ser incluido através de constructor()
 abstract class Conta(val titular: String, val numeroConta: Int) {
     var saldo = 0.0
         protected set/*

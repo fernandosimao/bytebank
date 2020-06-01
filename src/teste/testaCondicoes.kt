@@ -1,9 +1,11 @@
+package teste
+
 fun testaCondicoes(saldo: Double) {
 
     if (saldo > 0) {
         println("Saldo positivo")
     } else if (saldo == 0.0) {
-        println("Conta neutra")
+        println("modelo.Conta neutra")
     } else {
         println("Saldo negativo")
     }
@@ -13,7 +15,7 @@ fun testaCondicoes(saldo: Double) {
             println("Saldo positivo")
         }
         saldo == 0.0 -> {
-            println("Conta neutra")
+            println("modelo.Conta neutra")
         }
         else -> {
             println("Saldo negativo")
@@ -22,7 +24,7 @@ fun testaCondicoes(saldo: Double) {
 
     when {
         saldo > 0 -> println("Saldo positivo")
-        saldo == 0.0 -> println("Conta neutra")
+        saldo == 0.0 -> println("modelo.Conta neutra")
         else -> println("Saldo negativo")
     }
 
