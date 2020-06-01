@@ -1,3 +1,10 @@
+package teste
+
+import modelo.Auxiliar
+import modelo.CalculadoraBonificacao
+import modelo.Diretor
+import modelo.Gerente
+
 fun testaFuncionarios() {
 
     val gustavo = Auxiliar(
@@ -46,16 +53,16 @@ fun testaFuncionarios() {
     println("Salário do funcionário ${alex.salario}")
     println("Bonificação do Funcionário: ${alex.bonificacao()}")
 
-    println("Nome do Gerente ${fernando.nome}")
-    println("CPF do Gerente ${fernando.cpf}")
-    println("Salário do Gerente ${fernando.salario}")
-    println("Bonificação do Gerente: ${fernando.bonificacao()}")
+    println("Nome do modelo.Gerente ${fernando.nome}")
+    println("CPF do modelo.Gerente ${fernando.cpf}")
+    println("Salário do modelo.Gerente ${fernando.salario}")
+    println("Bonificação do modelo.Gerente: ${fernando.bonificacao()}")
 
-    println("Nome do Diretor ${raquel.nome}")
-    println("CPF do Diretor ${raquel.cpf}")
-    println("Salário do Diretor ${raquel.salario}")
-    println("Bonificação do Diretor: ${raquel.bonificacao()}")
-    println("PLR do Diretor: ${raquel.plr}")
+    println("Nome do modelo.Diretor ${raquel.nome}")
+    println("CPF do modelo.Diretor ${raquel.cpf}")
+    println("Salário do modelo.Diretor ${raquel.salario}")
+    println("Bonificação do modelo.Diretor: ${raquel.bonificacao()}")
+    println("PLR do modelo.Diretor: ${raquel.plr}")
 
     println("O total de todas as bonificações pagas é de ${calculadoraBonificacao.total}")
 

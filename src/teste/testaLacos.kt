@@ -1,3 +1,5 @@
+package teste
+
 fun testaLacos() {
 
     for (i in 1..5) {

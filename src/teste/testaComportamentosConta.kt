@@ -1,3 +1,7 @@
+package teste
+
+import modelo.ContaCorrente
+
 fun testaComportamentosConta() {
     val contaAlex = ContaCorrente("Alex Felipe", 1855)
     contaAlex.deposita(2500.00)

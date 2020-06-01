@@ -1,3 +1,5 @@
+package modelo
+
 class Auxiliar(//tirando o val das variaveis abaixo eles deixam de ser properties e passam a ser apenas parametros
     nome: String,
     cpf: String,

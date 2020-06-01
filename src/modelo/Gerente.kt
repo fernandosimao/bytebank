@@ -1,3 +1,7 @@
+package modelo
+
+import modelo.FuncionarioAdmin
+
 class Gerente(//tirando o val das variaveis abaixo eles deixam de ser properties e passam a ser apenas parametros
     nome: String,
     cpf: String,
