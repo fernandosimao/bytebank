@@ -1,19 +1,30 @@
-package teste
+package br.com.alura.bytebank.teste
 
-import modelo.ContaCorrente
+import br.com.alura.bytebank.modelo.Cliente
+import br.com.alura.bytebank.modelo.ContaCorrente
+import br.com.alura.bytebank.modelo.Endereco
+
+val alex = Cliente(
+    nome = "Alex",
+    cpf = "111.111.111-11",
+    senha = 123456,
+    endereco = Endereco(logradouro = "Rua Deputado Soares Filho")
+)
+val fran = Cliente(nome = "Fran", cpf = "123.123.123.-23", senha = 123456)
 
 fun testaComportamentosConta() {
-    val contaAlex = ContaCorrente("Alex Felipe", 1855)
+    val contaAlex = ContaCorrente(alex, 1855)
     contaAlex.deposita(2500.00)
 
 
     //testando o uso de labels no construtor
-    val contaFran = ContaCorrente(numeroConta = 5699, titular = "Fran de Oliveira")
+    val contaFran = ContaCorrente(numeroConta = 5699, titular = fran)
     contaFran.deposita(1500.00)
 
     println(contaAlex.titular)
     println(contaAlex.numeroConta)
     println(contaAlex.saldo)
+    println(contaAlex.titular.endereco.logradouro)
 
     println(contaFran.titular)
     println(contaFran.numeroConta)
