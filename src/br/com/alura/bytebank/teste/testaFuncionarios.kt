@@ -1,9 +1,9 @@
-package teste
+package br.com.alura.bytebank.teste
 
-import modelo.Auxiliar
-import modelo.CalculadoraBonificacao
-import modelo.Diretor
-import modelo.Gerente
+import br.com.alura.bytebank.modelo.Auxiliar
+import br.com.alura.bytebank.modelo.CalculadoraBonificacao
+import br.com.alura.bytebank.modelo.Diretor
+import br.com.alura.bytebank.modelo.Gerente
 
 fun testaFuncionarios() {
 
@@ -53,16 +53,16 @@ fun testaFuncionarios() {
     println("Salário do funcionário ${alex.salario}")
     println("Bonificação do Funcionário: ${alex.bonificacao()}")
 
-    println("Nome do modelo.Gerente ${fernando.nome}")
-    println("CPF do modelo.Gerente ${fernando.cpf}")
-    println("Salário do modelo.Gerente ${fernando.salario}")
-    println("Bonificação do modelo.Gerente: ${fernando.bonificacao()}")
+    println("Nome do br.com.alura.bytebank.modelo.Gerente ${fernando.nome}")
+    println("CPF do br.com.alura.bytebank.modelo.Gerente ${fernando.cpf}")
+    println("Salário do br.com.alura.bytebank.modelo.Gerente ${fernando.salario}")
+    println("Bonificação do br.com.alura.bytebank.modelo.Gerente: ${fernando.bonificacao()}")
 
-    println("Nome do modelo.Diretor ${raquel.nome}")
-    println("CPF do modelo.Diretor ${raquel.cpf}")
-    println("Salário do modelo.Diretor ${raquel.salario}")
-    println("Bonificação do modelo.Diretor: ${raquel.bonificacao()}")
-    println("PLR do modelo.Diretor: ${raquel.plr}")
+    println("Nome do br.com.alura.bytebank.modelo.Diretor ${raquel.nome}")
+    println("CPF do br.com.alura.bytebank.modelo.Diretor ${raquel.cpf}")
+    println("Salário do br.com.alura.bytebank.modelo.Diretor ${raquel.salario}")
+    println("Bonificação do br.com.alura.bytebank.modelo.Diretor: ${raquel.bonificacao()}")
+    println("PLR do br.com.alura.bytebank.modelo.Diretor: ${raquel.plr}")
 
     println("O total de todas as bonificações pagas é de ${calculadoraBonificacao.total}")
 

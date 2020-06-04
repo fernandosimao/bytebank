@@ -1,11 +1,11 @@
-package teste
+package br.com.alura.bytebank.teste
 
 fun testaCondicoes(saldo: Double) {
 
     if (saldo > 0) {
         println("Saldo positivo")
     } else if (saldo == 0.0) {
-        println("modelo.Conta neutra")
+        println("br.com.alura.bytebank.modelo.Conta neutra")
     } else {
         println("Saldo negativo")
     }
@@ -15,7 +15,7 @@ fun testaCondicoes(saldo: Double) {
             println("Saldo positivo")
         }
         saldo == 0.0 -> {
-            println("modelo.Conta neutra")
+            println("br.com.alura.bytebank.modelo.Conta neutra")
         }
         else -> {
             println("Saldo negativo")
@@ -24,7 +24,7 @@ fun testaCondicoes(saldo: Double) {
 
     when {
         saldo > 0 -> println("Saldo positivo")
-        saldo == 0.0 -> println("modelo.Conta neutra")
+        saldo == 0.0 -> println("br.com.alura.bytebank.modelo.Conta neutra")
         else -> println("Saldo negativo")
     }
 

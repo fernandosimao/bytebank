@@ -1,9 +1,7 @@
-package modelo
-
-import modelo.Conta
+package br.com.alura.bytebank.modelo
 
 class ContaCorrente(
-    titular: String,
+    titular: Cliente,
     numeroConta: Int
 ) : Conta(
     titular = titular,
