@@ -10,7 +10,7 @@ abstract class Conta(
     val numeroConta: Int
 ) : Autenticavel by titular{ /*padrão chamado delegation sem ter que rescrever a função: delegamos para o autentica de titular
     a responsabilidade do autentica, assim não temos que implementar a classe abstrata autentica aqui dentro. Se fosse aqui
-    dentro teríamos o seguinte
+    dentro teríamos o seguinte´, usando o mesmo padrão delagation
     override fun autentica(senha: Int): Boolean {
         return titular.autentica(senha)
     }*/
@@ -29,7 +29,7 @@ abstract class Conta(
          No caso do protecd, o atributo fica acessível para a classe e suas filhas*/
 
 
-    init {
+    init {//toda vez que eu chamar essa classe, na implementação de um objeto, incremento a var total, de Contador
         total++
 
     }
@@ -46,7 +46,7 @@ abstract class Conta(
 
 
 
-    fun deposita(valor: Double) {
+    fun deposita(valor: Double) {//apesar da classe ser abastrata, posso ter métodos concretos
         if (valor > 0) {
             this.saldo += valor
         }
