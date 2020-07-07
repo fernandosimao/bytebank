@@ -3,7 +3,7 @@ package br.com.alura.bytebank.teste
 import java.lang.NumberFormatException
 
 fun testaExpressao() {
-    val teste = "1"
+    val teste = "a"
     val a: Int? = try {
         Integer.parseInt(teste)
     } catch (e: NumberFormatException) {

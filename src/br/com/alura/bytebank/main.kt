@@ -1,20 +1,20 @@
 package br.com.alura.bytebank
 
-import br.com.alura.bytebank.exception.SaldoInsuficienteException
+import br.com.alura.bytebank.modelo.Cliente
+import br.com.alura.bytebank.modelo.ContaPoupanca
 import br.com.alura.bytebank.modelo.Endereco
-import br.com.alura.bytebank.teste.testaComportamentosConta
+import br.com.alura.bytebank.teste.testaRun
+import br.com.alura.bytebank.teste.testaWith
 
 fun main() {
-    var enderecoNulo: Endereco? = Endereco(logradouro = "rua vergueiro")
-    var logradouroNovo: String? = enderecoNulo?.bairro
-    enderecoNulo?.let {
-        println(it.logradouro.length)
-    }
 
-    var b: String? = "casa"
-    b = null
-    println(b?.length)
+
+
+
 }
+
+
+
 
 
 
